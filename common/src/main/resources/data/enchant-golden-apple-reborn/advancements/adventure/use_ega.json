@@ -4,7 +4,7 @@
     "use": {
       "conditions": {
         "item": {
-          "items": "minecraft:enchanted_golden_apple"
+          "items": ["minecraft:enchanted_golden_apple"]
         }
       },
       "trigger": "minecraft:consume_item"
@@ -17,7 +17,7 @@
     "frame": "challenge",
     "icon": {
       "count": 1,
-      "id": "minecraft:enchanted_golden_apple"
+      "item": "minecraft:enchanted_golden_apple"
     },
     "title": {
       "translate": "egar.advancements.adventure.use_ega.title"

@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:enchanted_golden_apple"
+            "items": ["minecraft:enchanted_golden_apple"]
           }
         ]
       },
@@ -18,8 +18,7 @@
     },
     "frame": "challenge",
     "icon": {
-      "count": 1,
-      "id": "minecraft:enchanted_golden_apple"
+      "item": "minecraft:enchanted_golden_apple"
     },
     "title": {
       "translate": "egar.advancements.adventure.gerega.title"

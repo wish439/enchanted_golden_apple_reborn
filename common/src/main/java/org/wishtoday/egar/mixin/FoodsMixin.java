@@ -21,12 +21,12 @@ public class FoodsMixin {
     private static void onClinit(CallbackInfo ci) {
         ENCHANTED_GOLDEN_APPLE = new FoodProperties.Builder()
                 .nutrition(4)
-                .saturationModifier(1.2F)
+                .saturationMod(1.2F)
                 .effect(new MobEffectInstance(MobEffects.REGENERATION, 20 * 60, 4), 1.0F)
                 .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 6000, 0), 1.0F)
                 .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 0), 1.0F)
                 .effect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 3), 1.0F)
-                .alwaysEdible()
+                .alwaysEat()
                 .build();
     }
 }
