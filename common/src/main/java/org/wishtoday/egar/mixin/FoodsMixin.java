@@ -19,6 +19,7 @@ public class FoodsMixin {
 
     @Inject(method = "<clinit>",at = @At("TAIL"))
     private static void onClinit(CallbackInfo ci) {
+
         ENCHANTED_GOLDEN_APPLE = new FoodProperties.Builder()
                 .nutrition(4)
                 .saturationMod(1.2F)
