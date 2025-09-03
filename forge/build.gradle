@@ -48,7 +48,7 @@ sourceSets.main.resources.srcDir 'src/generated/resources'
 dependencies {
     compileOnly project(":common")
     annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
-    implementation("io.github.llamalad7:mixinextras-fabric:0.4.1")
+    implementation("io.github.llamalad7:mixinextras-fabric:0.5.0")
     compileOnly "org.jetbrains:annotations:24.0.1"
 }
 

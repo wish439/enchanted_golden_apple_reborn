@@ -20,7 +20,7 @@ public class EnchantmentGoldAppleItemMixin {
     private void getEnchantability(CallbackInfoReturnable<Integer> cir) {
         Item item = (Item) (Object) this;
         if (item == Items.GOLDEN_APPLE) {
-            cir.setReturnValue(100);
+            cir.setReturnValue(1);
         }
     }
 }
