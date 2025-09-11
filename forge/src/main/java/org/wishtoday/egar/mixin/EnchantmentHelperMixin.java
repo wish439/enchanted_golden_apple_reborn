@@ -21,7 +21,7 @@ public abstract class EnchantmentHelperMixin {
 
     @Redirect(method = "getAvailableEnchantmentResults", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;is(Lnet/minecraft/world/item/Item;)Z"))
     private static boolean onGet(ItemStack instance, Item item) {
-
+    
         /*List<EnchantmentInstance> list = Lists.newArrayList();
         boolean flag = stack.is(Items.BOOK) || stack.is(Items.GOLDEN_APPLE);
         for (Enchantment enchantment : BuiltInRegistries.ENCHANTMENT) {
