@@ -10,8 +10,7 @@
     "goldApple.EnchantmentGoldAppleItemMixin",
     "goldApple.EnchantmentHelperMixin",
     "goldApple.EnchantmentMixin",
-    "goldApple.EnchantmentScreenHandlerMixin",
-    "goldApple.ItemStackMixin"
+    "goldApple.EnchantmentScreenHandlerMixin"
   ],
   "server": [],
   "injectors": {
