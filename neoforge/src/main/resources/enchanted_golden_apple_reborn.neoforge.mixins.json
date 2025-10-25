@@ -3,7 +3,10 @@
   "minVersion": "0.8",
   "package": "org.wishtoday.egar.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "EnchantmentHelperMixin",
+    "EnchantmentMenuMixin"
+  ],
   "server": [],
   "injectors": {
     "defaultRequire": 1

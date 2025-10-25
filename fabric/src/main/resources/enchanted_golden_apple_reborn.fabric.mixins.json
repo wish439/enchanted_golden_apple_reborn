@@ -4,7 +4,9 @@
   "package": "org.wishtoday.egar.mixin",
   "refmap": "${mod_id}.refmap.json",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "EnchantmentHelperMixin"
+  ],
   "server": [],
   "injectors": {
     "defaultRequire": 1

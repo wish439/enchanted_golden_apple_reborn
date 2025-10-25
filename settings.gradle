@@ -48,4 +48,3 @@ rootProject.name = 'enchanted_golden_apple_reborn'
 include('common')
 include('fabric')
 include('neoforge')
-include('forge')
