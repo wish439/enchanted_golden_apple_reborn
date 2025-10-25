@@ -5,7 +5,11 @@
   "refmap": "${mod_id}.refmap.json",
   "compatibilityLevel": "JAVA_18",
   "mixins": [
-    "ConsumablesMixin"
+    "ConsumablesMixin",
+    "goldApple.AnvilScreenHandlerMixin",
+    "goldApple.EnchantmentMixin",
+    "goldApple.EnchantmentScreenHandlerMixin",
+    "goldApple.ItemsMixin"
   ],
   "server": [],
   "injectors": {
