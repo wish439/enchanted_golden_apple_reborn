@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(EnchantmentHelper.class)
-public abstract class EnchantmentHelperMixin {
+public abstract class ForgeEnchantmentHelperMixin {
 
     /*@WrapOperation(method = "getAvailableEnchantmentResults", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;is(Lnet/minecraft/world/item/Item;)Z"))
     private static boolean getAvailableEnchantmentResults(ItemStack instance
@@ -19,10 +19,10 @@ public abstract class EnchantmentHelperMixin {
         else return original.call(instance, item);
     }*/
 
-    @Redirect(method = "getAvailableEnchantmentResults", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;is(Lnet/minecraft/world/item/Item;)Z"))
+    /*@Redirect(method = "getAvailableEnchantmentResults", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;is(Lnet/minecraft/world/item/Item;)Z"))
     private static boolean onGet(ItemStack instance, Item item) {
     
-        /*List<EnchantmentInstance> list = Lists.newArrayList();
+        *//*List<EnchantmentInstance> list = Lists.newArrayList();
         boolean flag = stack.is(Items.BOOK) || stack.is(Items.GOLDEN_APPLE);
         for (Enchantment enchantment : BuiltInRegistries.ENCHANTMENT) {
             if (((!enchantment.isTreasureOnly() || allowTreasure) && enchantment.isDiscoverable() && (enchantment.canApplyAtEnchantingTable(stack) || flag && enchantment.isAllowedOnBooks())) || stack.is(Items.GOLDEN_APPLE)) {
@@ -34,7 +34,7 @@ public abstract class EnchantmentHelperMixin {
                 }
             }
         }
-        cir.setReturnValue(list);*/
+        cir.setReturnValue(list);*//*
         return instance.is(Items.GOLDEN_APPLE) || instance.is(Items.BOOK);
-    }
+    }*/
 }
