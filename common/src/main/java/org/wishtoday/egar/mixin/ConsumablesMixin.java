@@ -28,6 +28,7 @@ public abstract class ConsumablesMixin {
         return null;
     }
 
+    @SuppressWarnings("DataFlowIssue")
     @Inject(method = "<clinit>", at = @At("TAIL"))
     private static void onClinit(CallbackInfo ci) {
         ENCHANTED_GOLDEN_APPLE = defaultFood()
