@@ -4,8 +4,7 @@
   "package": "org.wishtoday.egar.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "ForgeEnchantmentHelperMixin",
-    "EnchantmentMenuMixin"
+    "ForgeEnchantmentHelperMixin"
   ],
   "server": [],
   "injectors": {

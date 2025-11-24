@@ -14,6 +14,11 @@ legacyForge {
     }
 }
 
+mixin {
+    add(sourceSets.main, "${mod_id}.mixins.refmap.json")
+    config("${mod_id}.mixins.json")
+}
+
 dependencies {
     implementation("io.github.llamalad7:mixinextras-fabric:0.4.1")
     compileOnly group: 'org.spongepowered', name: 'mixin', version: '0.8.5'

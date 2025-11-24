@@ -9,6 +9,7 @@
     "goldApple.AnvilScreenHandlerMixin",
     "goldApple.EnchantmentGoldAppleItemMixin",
     "goldApple.EnchantmentHelperMixin",
+    "goldApple.EnchantmentMenuMixin",
     "goldApple.EnchantmentMixin",
     "goldApple.EnchantmentScreenHandlerMixin"
   ],

@@ -22,7 +22,6 @@ public abstract class AnvilScreenHandlerMixin extends ItemCombinerMenu {
         super(pType, pContainerId, pPlayerInventory, pAccess);
     }
 
-
     @Inject(method = "createResult", at = @At(value = "RETURN"), cancellable = true)
     private void onUpdateResult(CallbackInfo ci) {
         ItemStack stack = this.inputSlots.getItem(0);
