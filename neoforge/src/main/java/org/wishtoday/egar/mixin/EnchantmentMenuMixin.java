@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.At;
 
 @Mixin(EnchantmentMenu.class)
 public class EnchantmentMenuMixin {
-    @ModifyExpressionValue(method = "getEnchantmentList", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;is(Lnet/minecraft/world/item/Item;)Z"))
+    @ModifyExpressionValue(method = "getEnchantmentList", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;is(Ljava/lang/Object;)Z"))
     private boolean onEnchantmentList(boolean original, @Local(argsOnly = true) ItemStack stack) {
         return stack.is(Items.BOOK) || stack.is(Items.GOLDEN_APPLE);
     }

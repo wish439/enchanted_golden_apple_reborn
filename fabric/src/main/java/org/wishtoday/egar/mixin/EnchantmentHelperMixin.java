@@ -2,7 +2,6 @@ package org.wishtoday.egar.mixin;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.llamalad7.mixinextras.sugar.Local;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
@@ -13,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.At;
 public class EnchantmentHelperMixin {
     @ModifyExpressionValue(method = "getAvailableEnchantmentResults"
             , at = @At(value = "INVOKE"
-            , target = "Lnet/minecraft/world/item/ItemStack;is(Lnet/minecraft/world/item/Item;)Z"))
+            , target = "Lnet/minecraft/world/item/ItemStack;is(Ljava/lang/Object;)Z"))
     private static boolean getPossibleEntries(boolean original, @Local(argsOnly = true) ItemStack stack) {
         return stack.is(Items.BOOK) || stack.is(Items.GOLDEN_APPLE);
     }
